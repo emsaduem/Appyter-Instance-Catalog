@@ -1,0 +1,81 @@
+body {
+  font-size: 12pt;
+  background-color: 'light-grey';
+}
+
+.header {
+  padding: 20px;
+  height: 35px;
+  width: 100%;
+  text-align: left;
+  background: #DAEEF4;
+  color: rgb(128, 126, 126);
+  font-size: 20px;
+}
+
+/*
+ * Centering the body content
+ */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+div.about {
+  padding: 10px 0 30px 0;
+  background-color: #DAEEF4;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+div.submissionPortal {
+  padding: 10px 0 30px 0;
+  background-color: #DAEEF4;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+div.login {
+  padding: 10px 0 30px 0;
+  background-color: #DAEEF4;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.header h1.logo {
+  margin: 0;
+  font-size: 1.7em;
+  color: rgb(199, 199, 199);
+  float: left;
+  font-family:'AmpleSoft Pro'
+}
+.menu {
+  float: right;
+  margin-top: 8px;
+  
+}
+.menu li {
+  display: inline;
+}
+.menu li + li {
+  text-align: center;
+  padding: 30px 30px;
+  margin-left: 50px;
+}
+.menu li a {
+  color: #444;
+  text-decoration: none;
+}
+
+img {
+  float: left;
+  padding: 1px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
