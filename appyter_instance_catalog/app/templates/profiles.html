@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block title %}Profile{% endblock %}
+
+<html>
+    {% block content %}
+  <body>
+   <div class="container">
+     <h1>Welcome, {{ name }} !!!</h1>
+     <p>Will eventually have all past submitted appyter instances</p>
+   </div>
+   <a href="{{ url_for('logout') }}">
+    <button class="button is-block is-info is-large is-fullwidth">Logout</button> </a>
+  </body>
+
+  {% endblock %}
+</html>

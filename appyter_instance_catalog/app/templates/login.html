@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+<html>
+{% block content %}
+
+<div class="column is-4 is-offset-4">
+    <h1>Login</h1>
+    {% if message %}
+
+			<!-- the form was submitted and message exists -->
+	<p class="lead"><strong>{{ message }}</strong></p>
+    {% endif %}
+    <div class="box">
+        <form method="POST" action="/appyter_instance_catalog/login">
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="email" name="email" placeholder="Your Email" autofocus="">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="password" name="password" placeholder="Your Password">
+                </div>
+            </div>
+            <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Remember me
+                </label>
+            </div>
+            <button class="button is-block is-info is-large is-fullwidth">Login</button>
+        </form>
+        <a href="{{ url_for('signup') }}">
+        <button class="button is-block is-info is-large is-fullwidth">Sign Up</button> </a>
+    </div>
+</div>
+
+{%endblock%}
+</html>
